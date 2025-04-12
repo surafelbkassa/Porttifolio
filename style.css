@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+:root {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --accent-color: #00bcd4;
+}
+
+.light-theme {
+  --background-color: #e0f7fa; /* Light blue background */
+  --text-color: #121212; /* Dark text for contrast */
+  --accent-color: #0078d4; /* Blue accent color */
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background: var(--accent-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+theme-toggle:hover {
+  background: #008c9e;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: var(--background-color);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: var(--text-color); /* Ensure text is visible */
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
+
+/* Projects Section */
+.projects {
+  padding: 50px 20px;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--text-color); /* Ensure text is visible */
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #1e1e1e;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  margin: 15px 0 10px;
+  color: var(--text-color); /* Ensure text is visible */
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: var(--accent-color);
+  color: var(--background-color);
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.project-card a:hover {
+  background: #008c9e;
+}
+
+/* Contact Section */
+.contact {
+  text-align: center;
+  padding: 30px 20px;
+  background: var(--background-color);
+}
+
+.contact h2 {
+  margin-bottom: 10px;
+  color: var(--text-color); /* Ensure text is visible */
+}
+
+.contact a {
+  font-size: 1.2rem;
+  color: var(--accent-color); /* Ensure link is visible */
+}
